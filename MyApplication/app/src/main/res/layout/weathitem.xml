@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/cardviewheight"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="2dp"
+    android:layout_margin="20dp"
+    card_view:contentPadding="10dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardviewheight"
+        android:id="@+id/parentlay"
+
+        >
+        <customfont.Customfont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/orange"
+            android:id="@+id/date"/>
+        <ImageView
+            android:layout_width="@dimen/imageviewheight"
+            android:layout_height="@dimen/imageviewheight"
+            android:layout_centerInParent="true"
+            android:id="@+id/weatherimage"
+            android:src="@drawable/ic_rain"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="5dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/templin"
+            android:layout_below="@+id/weatherimage"
+
+            android:orientation="horizontal">
+            <customfont.Customfont
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+
+                android:text="@string/temp"
+                android:textColor="@color/black"/>
+            <customfont.Customfont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=":"
+                android:textColor="@color/black"/>
+
+            <customfont.Customfontregular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+
+                android:id="@+id/tempresult"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/templin"
+
+            android:orientation="horizontal">
+            <customfont.Customfont
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/loc"
+                android:text="@string/location"
+                android:textColor="@color/black"/>
+            <customfont.Customfont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=":"
+                android:textColor="@color/black"/>
+
+            <customfont.Customfontregular
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:id="@+id/locationresult"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

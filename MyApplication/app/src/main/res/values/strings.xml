@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="title">Weather Report</string>
+
+    <string name="temp">Temperature  </string>
+    <string name="mintemp">Min.Temp   </string>
+    <string name="maxtemp">Max.Temp   </string>
+    <string name="Wind">Wind          </string>
+    <string name="humidity">Humidity   </string>
+    <string name="Pressure">Pressure   </string>
+    <string name="location">Location</string>
+
+    <string name="Save">Save</string>
+</resources>
